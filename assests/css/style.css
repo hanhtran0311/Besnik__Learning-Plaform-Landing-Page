@@ -299,7 +299,7 @@ a:hover {
 }
 
 .features .content span {
-    letter-spacing: 1px;
+    letter-spacing: 6px;
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
@@ -344,6 +344,14 @@ a:hover {
     color: #9DA6A5;
 }
 
+.features-list .item:nth-child(2) .icon {
+    background-color: #FF947A;
+}
+
+.features-list .item:nth-child(3) .icon {
+    background-color: #BF83FF;
+}
+
 .features-list .item:nth-child(1) .desc {
     width: 168px;
 }
@@ -374,7 +382,7 @@ a:hover {
 }
 
 .popular-top span {
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
@@ -500,7 +508,7 @@ a:hover {
 /* --------- Stats ------------ */
 .stats {
     margin-top: 200px;
-    padding: 65px;
+    padding: 65px 0;
 }
 
 .stats .body {
@@ -523,6 +531,201 @@ a:hover {
     line-height: 2.7rem;
     text-align: center;
     color: #767E7E;
+}
+
+/* --------- Feedback ------------ */
+.feedback {
+    margin-top: 199px;
+}
+
+.feedback .body {
+    display: flex;
+}
+
+.feedback .content {
+    width: 42%;
+}
+
+.feedback .blockquote {
+    width: 419px;
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5D6564;
+}
+
+.feedback .name {
+    display: inline-block;
+    margin-top: 33px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #767E7E;
+}
+
+.feedback strong {
+    font-weight: 500;
+    color: #070707;
+
+}
+
+.feedback .avatar {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .btn-group {
+    margin-top: 52px;
+    display: flex;
+    gap: 0 30px;
+}
+
+.feedback .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+.feedback .btn:hover {
+    opacity: 0.9;
+}
+
+.feedback .avatar-block {
+    width: 58%;
+    position: relative;
+}
+
+.feedback .avatar-block img.avatar:nth-child(4) {
+    position: absolute;
+    right: 200px;
+    top: 85px;
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+}
+
+.feedback img.avatar:nth-child(1) {
+    position: absolute;
+    right: 431px;
+    top: -15px;
+    width: 78px;
+    height: 78px;
+}
+
+.feedback img.avatar:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 117px;
+    width: 78px;
+    height: 78px;
+}
+
+.feedback img.avatar:nth-child(3) {
+    position: absolute;
+    bottom: -50px;
+    left: 234px;
+    width: 78px;
+    height: 78px;
+}
+
+.feedback img.avatar:nth-child(5) {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.feedback img.avatar:nth-child(6) {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    width: 78px;
+    height: 78px;
+}
+
+/* --------- Admit ------------ */
+.admit {
+    margin-top: 167px;
+    background: #DEF6F5;
+    padding: 76px 0 88px;
+}
+
+.admit .body {
+    display: flex;
+    align-items: center;
+    gap: 0 410px;
+}
+
+.admit .desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #767E7E;
+}
+
+.admit .btn {
+    width: 186px;
+    height: 68px;
+    background: var(--primary-color);
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* --------- Footer ------------ */
+.footer {
+    margin-top: 140px;
+    padding-bottom: 65px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .row .title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #2E2E2E;
+}
+
+.footer .row .list {
+    margin-top: 25px;
+}
+
+.footer .row li {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.footer .column:last-child li {
+    display: flex;
+    align-items: center;
+    gap: 0 13px;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #B0B5B4;
+    text-align: center;
 }
 
 
