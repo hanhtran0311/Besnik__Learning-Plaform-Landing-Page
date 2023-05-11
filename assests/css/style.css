@@ -32,6 +32,26 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: 0.9;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+
 /* --------- Header ------------ */
 .header {
     background-color: #fff;
@@ -88,9 +108,13 @@ a {
     color: var(--primary-color);
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 /* --------- Hero ------------ */
 .hero {
-    margin: 42px 0;
+    margin: 53px 0;
 }
 
 .hero .body {
@@ -143,6 +167,9 @@ a {
 }
 
 .cta-group .watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     width: 62px;
     height: 62px;
@@ -159,6 +186,7 @@ a {
 }
 
 .media-block .thumb {
+    display: block;
     width: 576px;
     height: 631px;
     object-fit: cover;
@@ -263,3 +291,239 @@ a {
     line-height: 33px;
     color: #FFFFFF;
 }
+
+/* --------- Features ------------ */
+.features {
+    margin-top: 209px;
+    background: #fff;
+}
+
+.features .content span {
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #767E7E;
+}
+
+.features .content h2 {
+    margin-top: 18px;
+    width: 577px;
+}
+
+.features .content .desc {
+    margin-top: 18px;
+    width: 590px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #767E7E;
+}
+
+.features .features-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 209px;
+    margin-top: 80px;
+}
+
+.features-list .item .title {
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #0D1111;
+}
+
+.features-list .item .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: #9DA6A5;
+}
+
+.features-list .item:nth-child(1) .desc {
+    width: 168px;
+}
+
+.features-list .item:nth-child(2) .desc {
+    width: 223px;
+}
+
+.features-list .item:nth-child(3) .desc {
+    width: 224px;
+}
+
+.features-list .item .icon {
+    font-size: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 106px;
+    background: #FFC147;
+    border-radius: 18px;
+}
+
+/* --------- Popular ------------ */
+.popular {
+    margin-top: 65px;
+    padding: 65px 0;
+}
+
+.popular-top span {
+    letter-spacing: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #767E7E;
+}
+
+.popular-top .heading-lv2 {
+    margin-top: 18px;
+}
+
+.popular-top .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .desc {
+    width: 525px;
+    margin-top: 19px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767E7E;
+}
+
+.popular-top .action {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+}
+
+.popular .courses-list {
+    margin-top: 79px;
+    display: flex;
+    gap: 0 47px;
+}
+
+.popular .courses-list .thumb:hover {
+    opacity: 1;
+}
+
+.courses-list .list-item {
+    position: relative;
+    width: 33.33%;
+}
+
+.popular .courses-list .thumb {
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    background: #D0EFED;
+    opacity: 0.45;
+    border-radius: 8px;
+}
+
+.popular .courses-list .info {
+    position: absolute;
+    left: 17px;
+    bottom: -118px;
+    padding: 18px 25px 29px;
+    width: calc(100% - 34px);
+    background: #fff;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.popular .courses-list .title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    color: #0D1111;
+}
+
+.popular .courses-list .price {
+    display: block;
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #767E7E;
+}
+
+.popular .courses-list strong {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0D1111;
+}
+
+.popular .courses-list .desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #9DA6A5;
+}
+
+.popular .foot {
+    margin-top: 18px;
+    gap: 0 16px;
+    display: flex;
+}
+
+.popular .foot span {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #9DA6A5;
+}
+
+.popular .foot span::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+/* --------- Stats ------------ */
+.stats {
+    margin-top: 200px;
+    padding: 65px;
+}
+
+.stats .body {
+    display: flex;
+    gap: 0 36px;
+    justify-content: space-evenly;
+}
+
+.stats strong {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 9.3rem;
+    text-align: center;
+    color: #0D1111;
+}
+
+.stats .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: #767E7E;
+}
+
+
+
