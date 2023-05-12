@@ -51,6 +51,10 @@ a:hover {
     word-break: break-all;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 
 /* --------- Header ------------ */
 .header {
@@ -62,6 +66,7 @@ a:hover {
     z-index: 1;
 }
 .header .body {
+    display: flex;
     padding: 64px 0 8px;
     display: flex;
     align-items: center;
@@ -73,23 +78,23 @@ a:hover {
 
 .header .nav .list {
     display: flex;
+    margin-right: 133px;
 }
 
-.nav .list a {
+.header .list a {
     padding: 8px 20px;
     font-weight: 400;
     font-size: 1.6rem;
     color: #2F3A3B;
 }
 
-.nav .list a.active ,
-.nav .list a:hover {
+.header .list a.active ,
+.header .list a:hover {
     text-shadow: 1px 0 0 currentColor;
 }
 
 .header .action {
     display: flex;
-    margin-left: 157px;
 }
 
 .header .action a {
@@ -102,16 +107,11 @@ a:hover {
 
 .header .action a:hover {
     font-weight: 600;
-    padding: 8px 24px;
+    padding: 7px 23px;
     border: 1px solid var(--primary-color);
     border-radius: 6px;
     color: var(--primary-color);
 }
-
-.btn:hover {
-    opacity: 0.9;
-}
-
 /* --------- Hero ------------ */
 .hero {
     margin: 53px 0;
@@ -182,7 +182,7 @@ a:hover {
 .hero .media-block {
     position: relative;
     width: 56%;
-    padding-left: 136px;
+    padding-left: 57px;
 }
 
 .media-block .thumb {
@@ -196,7 +196,7 @@ a:hover {
 .media-block .courses {
     position: absolute;
     bottom: 407px;
-    left: 90px;
+    left: 15px;
     display: flex;
     align-items: center;
     gap: 0 16px;
@@ -223,7 +223,7 @@ a:hover {
 
 .media-block .schedules {
     position: absolute;
-    left: 62px;
+    left: 0px;
     bottom: 46px;
     padding: 16px 25px;
     width: 124px;
